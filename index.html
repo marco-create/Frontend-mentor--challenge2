@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="main-present">
+      <h1 class="main__title">Learn to code by watching others</h1>
+      <p class="main__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="main-section--form">
+      <div class="main-button" id="formbtn">
+        <a href="#" class="main-button--offers"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
+      </div>
+
+      <form class="main-form" name="validationForm" onsubmit="submitForm()">
+        <input type="text" name="Name" id="forminput" placeholder="First name">
+        <input type="text" name="Surname" id="forminput" placeholder="Last name">
+        <input type="email" name="Email" id="forminput" placeholder="Email Address" oninvalid="this.setCustomValidity('Looks like this is not an email')">
+        <input type="password" name="Password" id="forminput" placeholder="Password">
+
+        <input class="form-button form-button--trial" type="submit" value="Claim your free trial" id="formbtn">
+
+        <div class="form-info">
+          <p class="form-info__text">By clicking the button, you are agreeing to our <strong class="strong">Terms and Services</strong></p>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/marco-ninghetto/" target="_blank">Marco Ninghetto</a>.
+    </p>
+  </footer>
+
+</body>
+
+<script>
+  function submitForm() {
+    var first = document.validationForm.Name;
+    var last = document.validationForm.Surname;
+    var email = document.validationForm.Email;
+    var password = document.validationForm.Password;
+
+    const fields = [first, 
+                    last, 
+                    email, 
+                    password
+                  ];
+    
+    fields.forEach(element => {
+      if (element.value === "") {
+        alert(`${element.name} cannot be empty.`);
+        return false
+      } else {
+        return true
+      }
+    });
+    
+  }
+</script>
+
+</html>

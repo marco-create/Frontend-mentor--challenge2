@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* html {
+    height: 100%;
+} */
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-size: cover;
+    box-shadow: inset 5000px 0 0 0 rgba(243, 4, 4, 0.5);
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
+    height: 90%;
+    padding: 2rem 1rem 2rem 1rem;
+
+    text-align: center;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-button {
+    margin-top: 3rem;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 1rem 4rem;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-button--offers {
+    background-color: transparent;
+}
+
+.main-form {
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-form input {
+    height: 40px;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(214, 209, 209);
+    border-radius: 5px;
+
+}
+
+input + input {
+    margin-top: 1rem;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 600;
+}
+:-moz-placeholder {
+    font-weight: 600;
+}
+::-moz-placeholder {
+    font-weight: 600;
+}
+:-ms-input-placeholder {
+    font-weight: 600;
+}
+
+.form-button {
+    margin-top: 1rem;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 0 rgba(34, 121, 83, 0.6);
+}
+
+.form-button--trial {
+    font-size: 1rem;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-info {
+    padding: 0 2.5rem;
+}
+.form-info__text {
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+}
+
+#forminput:hover {
+    border: 2px solid hsl(246, 25%, 77%);
+}
+
+#formbtn:hover {
+    cursor: pointer;
+    color: #000;
+    box-shadow: inset 1000px 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0 -4px 0 rgba(34, 121, 83, 0.6);
+}
+#formbtn:hover a {
+    color: #000;
+}
+
+.strong {
+    font-weight: 600;
+    color: hsl(154, 57%, 32%);
+}
+.attribution {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    margin: 0 auto;
+    padding: 0;
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:750px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        padding: 1rem 2rem;
+    }
+
+    .main-present {
+        text-align: left;
+        width: 60%;
+        margin-right: 2rem;
+    }
+
+    .main__title {
+        font-size: 3rem;
+        padding-right: 6rem;
+    }
+
+    .main__text {
+        padding-right: 2rem;
+    }
+
+    .main-section--form {
+        max-width: 60%;
+    }
+
+    .main-button {
+        margin: 0;
+    }
+
+    .main-form {
+        padding: 2rem;
+    }
+}
