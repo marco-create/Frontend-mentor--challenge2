@@ -29,9 +29,9 @@ Users should be able to:
 ### Screenshot
    
 - Mobile view   
-<img src="./images/mobile-screenshot.png" alt="drawing" width="200"/>  
+<img src="./docs/images/mobile-screenshot.png" alt="drawing" width="200"/>  
 - Desktop view 
-<img src="./images/desktop-screenshot.png" alt="drawing" width="600"/>
+<img src="./docs/images/desktop-screenshot.png" alt="drawing" width="600"/>
 
 ### Links
 
