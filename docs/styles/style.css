@@ -108,13 +108,13 @@ input + input {
     border: 2px solid hsl(246, 25%, 77%);
 }
 
-#formbtn:hover {
+.formbtn:hover {
     cursor: pointer;
     color: #000;
     box-shadow: inset 1000px 0 0 0 rgb(255, 255, 255);
     box-shadow: 0 -4px 0 rgba(34, 121, 83, 0.6);
 }
-#formbtn:hover a {
+.formbtn:hover a {
     color: #000;
 }
 

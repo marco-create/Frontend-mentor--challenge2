@@ -23,17 +23,17 @@
     </div>
 
     <div class="main-section--form">
-      <div class="main-button" id="formbtn">
+      <div class="main-button formbtn">
         <a href="#" class="main-button--offers"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
       </div>
 
       <form class="main-form" name="validationForm" onsubmit="submitForm()">
-        <input aria-label="Name" type="text" name="Name" class="forminput" placeholder="First name">
-        <input aria-label="Surname" type="text" name="Surname" class="forminput" placeholder="Last name">
-        <input aria-label="Email" type="email" name="Email" class="forminput" placeholder="Email Address" oninvalid="this.setCustomValidity('Looks like this is not an email')">
-        <input aria-label="Password" type="password" name="Password" class="forminput" placeholder="Password">
+        <input aria-label="Name" type="text" name="Name" class="main-form__name forminput" placeholder="First name">
+        <input aria-label="Surname" type="text" name="Surname" class="main-form__surname forminput" placeholder="Last name">
+        <input aria-label="Email" type="email" name="Email" class="main-form__email forminput" placeholder="Email Address" oninvalid="this.setCustomValidity('Looks like this is not an email')">
+        <input aria-label="Password" type="password" name="Password" class="main-form__password forminput" placeholder="Password">
 
-        <input aria-label="submit" class="form-button form-button--trial" type="submit" value="Claim your free trial" id="formbtn">
+        <input aria-label="submit" class="form-button form-button--trial formbtn" type="submit" value="Claim your free trial">
 
         <div class="form-info">
           <p class="form-info__text">By clicking the button, you are agreeing to our <strong class="strong">Terms and Services</strong></p>
