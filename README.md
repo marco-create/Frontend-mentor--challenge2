@@ -29,14 +29,13 @@ Users should be able to:
 ### Screenshot
    
 - Mobile view   
-<img src="./images/mobile-screenshot.png" alt="drawing" width="200"/>  
+<img src="./docs/images/mobile-screenshot.png" alt="drawing" width="200"/>  
 - Desktop view 
-<img src="./images/desktop-screenshot.png" alt="drawing" width="600"/>
+<img src="./docs/images/desktop-screenshot.png" alt="drawing" width="600"/>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live site URL](https://marco-create.github.io/Frontend-mentor--challenge2/)
 
 ## My process
 
