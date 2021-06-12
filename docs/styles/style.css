@@ -104,7 +104,7 @@ input + input {
     color: hsl(246, 25%, 77%);
 }
 
-#forminput:hover {
+.forminput:hover {
     border: 2px solid hsl(246, 25%, 77%);
 }
 
@@ -133,6 +133,12 @@ input + input {
     margin: 0 auto;
     padding: 0;
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:580px) {
+    .attribution {
+        display: none;
+    }
 }
 
 @media (min-width:750px) {
